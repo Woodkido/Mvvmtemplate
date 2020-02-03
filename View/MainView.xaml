@@ -1,0 +1,14 @@
+﻿<Window x:Class="mvvm2.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mvvm2.View"
+        mc:Ignorable="d"
+        Title="MainView" Height="450" Width="800">
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" ItemsSource="{Binding Path=DataItems}" Height="419" VerticalAlignment="Top" Width="375"/>
+        <Button Content="Wczytaj" Command="{Binding Path=LoadCommand}" HorizontalAlignment="Left" Margin="419,191,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
